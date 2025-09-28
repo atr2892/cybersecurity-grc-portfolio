@@ -21,9 +21,6 @@ less report/lab_report.md
 
 # Convert markdown to PDF locally (optional)
 pandoc report/lab_report.md -o report/lab_report.pdf
-
-# Push to your GitHub
-./push_to_github.sh git@github.com:<youruser>/sniffing-lab.git
 ```
 
 ## Notes on publication
