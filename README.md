@@ -15,7 +15,7 @@
 ---
 
 ## 📂 Portfolio Overview
-Hands-on labs in a controlled lab environment. Focus: network capture, web app attacks, social engineering/AitM, AD recon, and defensive automation (DNS sinkholing, firewall rules, malware cleanup). Evidence screenshots included.
+Hands-on labs in a controlled lab environment. Focus: network capture, web app attacks, social engineering/AitM, AD recon, and defensive automation (DNS sinkholing, firewall rules, malware cleanup). Evidence redacted screenshots included (unredacted screenshots avaliable upon request).
 
 ---
 
