@@ -1,7 +1,7 @@
 # Alison T. Richardson-Howard
-**Cybersecurity Specialist | Penetration Tester | Security Automation Enthusiast**
+**Cybersecurity Specialist | Penetration Tester | Security Automation Engineer**
 
-📍 Minooka, IL (Remote-Ready)  
+📍 Chicago, IL (Remote-Ready)  
 📧 alisonrichardsonhoward@gmail.com  
 🔗 [LinkedIn](https://www.linkedin.com/in/alison-richardson-howard) · 💻 [GitHub](https://github.com/atr2892)
 
