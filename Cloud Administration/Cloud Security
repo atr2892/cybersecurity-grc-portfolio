@@ -1,0 +1,106 @@
+#### ☁️ Cloud Security Assessment & Architecture Proposal  
+*Type: Cloud Security Analysis & Implementation Plan*
+
+**Technologies / Platforms Referenced:**  
+Azure Key Vault • RBAC • Virtual Machines • Cloud Backup Solutions • IaaS Security Models
+
+**Summary:**  
+This paper analyzes on-premise security gaps and proposes a secure cloud architecture to improve confidentiality, integrity, and availability. It emphasizes proper RBAC implementation, key management, backup strategy, and shared responsibility in IaaS environments.
+
+---
+
+### 🧩 Scenario Overview
+A company faces increasing operational and security challenges with its existing on-premise environment. A cloud solution is proposed to address its need for scalability, protection of sensitive data, and access control improvements.
+
+---
+
+### 🔐 Security Gaps Identified
+- Poor role-based access control enforcement
+- Inadequate key management practices
+- Unclear responsibility split for infrastructure security
+- Limited backup and recovery mechanisms
+
+These weaknesses increase the risk of data breaches, insider misuse, and system downtime.
+
+---
+
+### ☁️ Cloud Solution Proposal
+The proposed architecture migrates core infrastructure to the cloud using:
+- **Azure Key Vault** for secret, key, and certificate management
+- **RBAC** to enforce least privilege and task separation
+- **IaaS framework** to define shared responsibilities between customer and provider
+- **Cloud-based backup and restoration** to ensure continuity
+
+This solution enhances security visibility, automates access control, and improves policy enforcement.
+
+---
+
+### 🧑‍💼 RBAC Structure & Justification
+The paper emphasizes:
+- Assigning users only the permissions required for their role
+- Segregating high-impact privileges
+- Using role assignments within Azure AD
+- Mapping responsibilities to operational duties (e.g., admin vs. standard user)
+
+This reduces internal threat exposure and audit failures.
+
+---
+
+### 🔑 Azure Key Vault Configuration
+Key Vault is recommended for:
+- Storing secrets, keys, and certificates securely
+- Enforcing access via RBAC or access policies
+- Automating key rotation
+- Integrating with services hosted in Azure
+
+This prevents credential leakage and centralizes key lifecycle management.
+
+---
+
+### 🔄 Cloud Backup Strategy
+The cloud backup approach covers:
+- Regular snapshots of virtual machines
+- Encrypted offsite backup storage
+- Restoration testing to ensure functionality
+- Defined Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO)
+
+This enhances business continuity compared to legacy systems.
+
+---
+
+### 🏗 IaaS Responsibility Breakdown
+The paper clarifies who is responsible for:
+**Cloud provider:**  
+- Physical infrastructure  
+- Hypervisors  
+- Core networking  
+- Datacenter security
+
+**Customer:**  
+- Operating system configuration  
+- Identity and access management  
+- Data classification and encryption  
+- Security updates and compliance
+
+This reduces confusion and strengthens compliance alignment.
+
+---
+
+### ⚠️ Threats & Mitigations
+Common threats addressed:
+- **Unauthorized access** → Enforced RBAC, MFA, and access logs  
+- **Data exfiltration** → Encryption at rest and in transit  
+- **Key exposure** → Managed storage in Azure Key Vault  
+- **System failure** → Cloud-based backups and redundancy
+
+These mitigations align with defense-in-depth and zero-trust principles.
+
+---
+
+### ✅ Key Takeaway
+Migrating to a cloud environment with structured RBAC, secure key management, clear IaaS responsibilities, and automated backups significantly improves organizational security posture while reducing operational risk.
+
+---
+
+### 📚 References
+(References from the original document can be added here if you want them included.)
