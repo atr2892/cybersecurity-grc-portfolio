@@ -1,159 +1,120 @@
-# Alison T. Richardson-Howard
-**Cybersecurity Specialist | Penetration Tester | Security Automation Engineer**
+Alison T. Richardson-Howard  
+Cybersecurity Specialist | Penetration Tester | Security Automation Engineer
 
 📍 Chicago, IL (Remote-Ready)  
 📧 alisonrichardsonhoward@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/alison-richardson-howard) · 💻 [GitHub](https://github.com/atr2892)
+🔗 LinkedIn · 💻 GitHub
+
+🎓 Education & Certifications  
+M.S. Cybersecurity & Information Assurance — Western Governors University (in progress)  
+CompTIA CySA+, ISC² CC, Google Cybersecurity Professional Certificate  
+Currently pursuing: CompTIA PenTest+
+
+📂 Portfolio Overview  
+Hands-on labs in a controlled lab environment. Focus: network capture, web app attacks, social engineering/AitM, AD recon, and defensive automation (DNS sinkholing, firewall rules, malware cleanup). Evidence redacted screenshots included (unredacted screenshots available upon request).
+
+## Projects
+
+### 🔹 Pentesting Work
+
+#### 🏥 Penetration Testing Engagement Plan Evaluation – Western View Hospital  
+*Type: Engagement Analysis & Strategic Recommendations*
+
+This project evaluates a penetration testing engagement plan for a healthcare organization and analyzes how well it aligns with compliance requirements, operational needs, and industry standards.
+
+**Focus Areas:**  
+- Penetration Testing Methodology  
+- Risk & Impact Evaluation  
+- HIPAA, GDPR, PCI DSS Alignment  
+- NIST SP 800-115 & ISO 27001 Integration  
+- Reporting & Remediation Strategy
+
+**Key Contributions:**  
+- Assessed scope across internal, external, and social engineering vectors  
+- Identified gaps in:
+  - Encryption validation  
+  - Incident response planning  
+  - Backup and disaster recovery  
+- Recommended:
+  - Clear Rules of Engagement  
+  - CVSS 3.1-based severity scoring  
+  - Phishing awareness controls  
+  - Contingency and rollback procedures
+
+**Tools Referenced:**  
+Nmap • Burp Suite • Social Engineering Toolkit (SET) • Vulnerability Scanning • Enumeration • Exploitation • Credential Harvesting
+
+**Outcome:**  
+Enhanced compliance coverage, minimized risk of service disruption, and improved reporting clarity for both executive and technical stakeholders.
 
 ---
 
-## 🎓 Education & Certifications
-- **M.S. Cybersecurity & Information Assurance** — Western Governors University (in progress)  
-- **CompTIA CySA+**, **ISC² CC**, **Google Cybersecurity Professional Certificate**  
-- Currently pursuing: **CompTIA PenTest+**
+1) Network Traffic Capture & Analysis  
+Tools: tcpdump, Wireshark  
+Steps: capture HTTP/FTP/ICMP, load PCAPs in Wireshark, verify plaintext POST creds.  
+Takeaway: insecure protocols leak credentials; capture + analysis confirms risk.
 
----
+Wireshark Analyzing Pcap Files Capture Traffic Related To Port 80 And Ftp Using Tcpdump Tcpdump Capturing 100 Packets Only On Icmp Using Eth0 Interface To Capture Traffic Plaintext Credentials Captured With Post
 
-## 📂 Portfolio Overview
-Hands-on labs in a controlled lab environment. Focus: network capture, web app attacks, social engineering/AitM, AD recon, and defensive automation (DNS sinkholing, firewall rules, malware cleanup). Evidence redacted screenshots included (unredacted screenshots avaliable upon request).
+2) Nmap Scripting & Automation  
+Tools: Bash, Nmap  
+Steps: wrote NmapAnalysis.sh; fixed -F conflict; added prompts & dual-port logic.  
+Takeaway: fast recon with reliable, prompt-driven scanning.
 
----
+Error Output Script Change Output Change Script To Receive Prompt To Specify Port Scan Bash Script Show Target That Has Both Open Ports Scripting Automation - Nmapanalysis Output Scipting Automation Lab Screenshots Fixed Error By Removing -F Final Bash Output
 
-## 1) Network Traffic Capture & Analysis
-**Tools:** tcpdump, Wireshark  
-**Steps:** capture HTTP/FTP/ICMP, load PCAPs in Wireshark, verify plaintext POST creds.  
-**Takeaway:** insecure protocols leak credentials; capture + analysis confirms risk.
+3) Active Directory Enumeration  
+Tools: PowerShell  
+Steps: enumerated domain computers, users, groups, user details.  
+Takeaway: AD recon quickly outlines attack surface & access patterns.
 
-![Wireshark Analyzing Pcap Files](screenshots/wireshark_analyzing_pcap_files.png)
-![Capture Traffic Related To Port 80 And Ftp Using Tcpdump](screenshots/capture_traffic_related_to_port_80_and_ftp_using_tcpdump.png)
-![Tcpdump Capturing 100 Packets Only On Icmp](screenshots/tcpdump_capturing_100_packets_only_on_icmp.png)
-![Using Eth0 Interface To Capture Traffic](screenshots/using_eth0_interface_to_capture_traffic.png)
-![Plaintext Credentials Captured With Post](screenshots/plaintext_credentials_captured_with_post.png)
+A List Of Active Directory Domain Computers Using Powershell To Do Active Directory Search A List Of Active Directory Domain Groups A List Of Active Directory User Details (no screenshots found) (no screenshots found) (no screenshots found)
 
----
+4) DNS Blocking Automation  
+Tools: Bash  
+Steps: pull bad domains, update /etc/hosts, verify resolution blocked.  
+Takeaway: quick DNS sinkhole stops callbacks/phishing domains.
 
-## 2) Nmap Scripting & Automation
-**Tools:** Bash, Nmap  
-**Steps:** wrote `NmapAnalysis.sh`; fixed `-F` conflict; added prompts & dual-port logic.  
-**Takeaway:** fast recon with reliable, prompt-driven scanning.
+Shows Scrit That Automatically Retrieve Bad Dns Resoltuions Block Dns Resolution Based On Thread Feed Start (no screenshots found) (no screenshots found) (no screenshots found)
 
-![Error Output](screenshots/error_output.png)
-![Script Change Output](screenshots/script_change_output.png)
-![Change Script To Receive Prompt To Specify Port Scan](screenshots/change_script_to_receive_prompt_to_specify_port_scan.png)
-![Bash Script Show Target That Has Both Open Ports](screenshots/bash_script_show_target_that_has_both_open_ports.png)
-![Scripting Automation - Nmapanalysis Output](screenshots/scripting_automation_-_nmapanalysis_output.png)
-![Scipting Automation Lab Screenshots](screenshots/scipting_automation_lab_screenshots.png)
-![Fixed Error By Removing -F](screenshots/fixed_error_by_removing_-f.png)
-![Final Bash Output](screenshots/final_bash_output.png)
+5) Firewall Rule Automation  
+Tools: Bash, iptables, cron  
+Steps: ingest CIDR threat feed, add DROP rules, de-dup, schedule with cron.  
+Takeaway: automated network hardening with scheduled updates.
 
----
+Completed Config For Iptables By Scripting Automated Scheduling Script Will Update Iptables Filter Rules With Ip Ranges From Threat Intelligence Feed Drop Rules Added To Ip Address Table Automate Script To Block Malicious Ip Addresses Automation Of Ip Range Firewall Block Rules From A Threat Feed List Of Ip Address That Were Used By Attackers Set Firewall Block Rules And Set Remove Duplicates (no screenshots found)
 
-## 3) Active Directory Enumeration
-**Tools:** PowerShell  
-**Steps:** enumerated domain computers, users, groups, user details.  
-**Takeaway:** AD recon quickly outlines attack surface & access patterns.
+6) Malware Removal Automation  
+Tools: Bash, threat hash feed, cron  
+Steps: match filenames+hashes, remove malware binaries, schedule cleanup.  
+Takeaway: hash-based removal reduces dwell time for known threats.
 
-![A List Of Active Directory Domain Computers](screenshots/a_list_of_active_directory_domain_computers.png)
-![Using Powershell To Do Active Directory Search](screenshots/using_powershell_to_do_active_directory_search.png)
-![A List Of Active Directory Domain Groups](screenshots/a_list_of_active_directory_domain_groups.png)
-![A List Of Active Directory User Details](screenshots/a_list_of_active_directory_user_details.png)
-_(no screenshots found)_
-_(no screenshots found)_
-_(no screenshots found)_
+Confirmed Removal Of Malware And Set Schedule Removing Malware Display Malware To Be Removed By Modified Bash Script (no screenshots found) (no screenshots found) (no screenshots found)
 
----
+7) SQL Injection Enumeration (SQLMap)  
+Tools: SQLMap  
+Steps: detect DBMS, list tables, enumerate columns/records.  
+Takeaway: shows full DB exposure from SQLi in vulnerable app.
 
-## 4) DNS Blocking Automation
-**Tools:** Bash  
-**Steps:** pull bad domains, update `/etc/hosts`, verify resolution blocked.  
-**Takeaway:** quick DNS sinkhole stops callbacks/phishing domains.
+Enumeration Using Sqlmap Enumeration Using Sqlmap Name Of Database Discovered On Targeted Dbms Sqlmap Enumeration, Enumeration Of Columns From Teh Users Table (no screenshots found) Enumerate Sqlmap, Enumeration Of The Tables Within The Database (no screenshots found)
 
-![Shows Scrit That Automatically Retrieve Bad Dns Resoltuions](screenshots/shows_scrit_that_automatically_retrieve_bad_dns_resoltuions.png)
-![Block Dns Resolution Based On Thread Feed Start](screenshots/block_dns_resolution_based_on_thread_feed_start.png)
-_(no screenshots found)_
-_(no screenshots found)_
-_(no screenshots found)_
+8) Adversary-in-the-Middle (AitM)  
+Tools: Burp Suite (proxy), Kali (attacker), Windows (victim)  
+Steps: proxy script changed victim settings; intercepted login POST to Juice Shop.  
+Takeaway: on-path interception + social engineering exposes credentials.
 
----
+Shows Crediatials Were Captured Will Copy To File Target Fooled By Fake Email Login Failed But Credia Potentially Captured Attack Script Created Create An Attack Script
 
-## 5) Firewall Rule Automation
-**Tools:** Bash, iptables, cron  
-**Steps:** ingest CIDR threat feed, add DROP rules, de-dup, schedule with cron.  
-**Takeaway:** automated network hardening with scheduled updates.
+9) Directory Traversal  
+Tools: Browser, Burp (optional)  
+Steps: manipulate URL to access files (e.g., /etc/passwd), confirm data disclosure.  
+Takeaway: improper path handling leads to sensitive file exposure.
 
-![Completed Config For Iptables By Scripting Automated Scheduling](screenshots/completed_config_for_iptables_by_scripting_automated_scheduling.png)
-![Script Will Update Iptables Filter Rules With Ip Ranges From Threat Intelligence Feed](screenshots/script_will_update_iptables_filter_rules_with_ip_ranges_from_threat_intelligence_feed.png)
-![Drop Rules Added To Ip Address Table](screenshots/drop_rules_added_to_ip_address_table.png)
-![Automate Script To Block Malicious Ip Addresses](screenshots/automate_script_to_block_malicious_ip_addresses.png)
-![Automation Of Ip Range Firewall Block Rules From A Threat Feed List Of Ip Address That Were Used By Attackers](screenshots/automation_of_ip_range_firewall_block_rules_from_a_threat_feed_list_of_ip_address_that_were_used_by_attackers.png)
-![Set Firewall Block Rules And Set Remove Duplicates](screenshots/set_firewall_block_rules_and_set_remove_duplicates.png)
-_(no screenshots found)_
+Directory Traveral Navigation To The Website Highlighted Directory Traveral Shows Traversal To Customer Information Via The Webroot Directory Traveral Shows Webroot Directory Represented Directory Traveral Using Etcpasswd To Get Admin Id Directory Traveral Vulnerability In Url Proven
 
----
+10) Scripting & Recon Automation  
+Tools: Bash, Python (Scapy/Scrapy), PowerShell  
+Steps: built DNS recon, AD search, and Nmap automation; validated outputs and fixed errors.  
+Takeaway: automation accelerates triage, recon, and defensive response.
 
-## 6) Malware Removal Automation
-**Tools:** Bash, threat hash feed, cron  
-**Steps:** match filenames+hashes, remove malware binaries, schedule cleanup.  
-**Takeaway:** hash-based removal reduces dwell time for known threats.
-
-![Confirmed Removal Of Malware And Set Schedule](screenshots/confirmed_removal_of_malware_and_set_schedule.png)
-![Removing Malware](screenshots/removing_malware.png)
-![Display Malware To Be Removed By Modified Bash Script](screenshots/display_malware_to_be_removed_by_modified_bash_script.png)
-_(no screenshots found)_
-_(no screenshots found)_
-_(no screenshots found)_
-
----
-
-## 7) SQL Injection Enumeration (SQLMap)
-**Tools:** SQLMap  
-**Steps:** detect DBMS, list tables, enumerate columns/records.  
-**Takeaway:** shows full DB exposure from SQLi in vulnerable app.
-
-![Enumeration Using Sqlmap](screenshots/enumeration_using_sqlmap.png)
-![Enumeration Using Sqlmap Name Of Database Discovered On Targeted Dbms](screenshots/enumeration_using_sqlmap_name_of_database_discovered_on_targeted_dbms.png)
-![Sqlmap Enumeration, Enumeration Of Columns From Teh Users Table](screenshots/sqlmap_enumeration,_enumeration_of_columns_from_teh_users_table.png)
-_(no screenshots found)_
-![Enumerate Sqlmap, Enumeration Of The Tables Within The Database](screenshots/enumerate_sqlmap,_enumeration_of_the_tables_within_the_database.png)
-_(no screenshots found)_
-
----
-
-## 8) Adversary-in-the-Middle (AitM)
-**Tools:** Burp Suite (proxy), Kali (attacker), Windows (victim)  
-**Steps:** proxy script changed victim settings; intercepted login POST to Juice Shop.  
-**Takeaway:** on-path interception + social engineering exposes credentials.
-
-![Shows Crediatials Were Captured Will Copy To File](screenshots/shows_crediatials_were_captured_will_copy_to_file.png)
-![Target Fooled By Fake Email Login Failed But Credia Potentially Captured](screenshots/target_fooled_by_fake_email_login_failed_but_credia_potentially_captured.png)
-![Attack Script Created](screenshots/attack_script_created.png)
-![Create An Attack Script](screenshots/create_an_attack_script.png)
-
----
-
-## 9) Directory Traversal
-**Tools:** Browser, Burp (optional)  
-**Steps:** manipulate URL to access files (e.g., `/etc/passwd`), confirm data disclosure.  
-**Takeaway:** improper path handling leads to sensitive file exposure.
-
-![Directory Traveral Navigation To The Website Highlighted](screenshots/directory_traveral_navigation_to_the_website_highlighted.png)
-![Directory Traveral Shows Traversal To Customer Information Via The Webroot](screenshots/directory_traveral_shows_traversal_to_customer_information_via_the_webroot.png)
-![Directory Traveral Shows Webroot Directory Represented](screenshots/directory_traveral_shows_webroot_directory_represented.png)
-![Directory Traveral Using Etcpasswd To Get Admin Id](screenshots/directory_traveral_using_etcpasswd_to_get_admin_id.png)
-![Directory Traveral Vulnerability In Url Proven](screenshots/directory_traveral_vulnerability_in_url_proven.png)
-
----
-
-## 10) Scripting & Recon Automation
-**Tools:** Bash, Python (Scapy/Scrapy), PowerShell  
-**Steps:** built DNS recon, AD search, and Nmap automation; validated outputs and fixed errors.  
-**Takeaway:** automation accelerates triage, recon, and defensive response.
-
-![Using Python And Scrapy For Recon Screenshots For Script Lab](screenshots/using_python_and_scrapy_for_recon_screenshots_for_script_lab.png)
-![Final Bash Output](screenshots/final_bash_output.png)
-![Fixed Error By Removing -F](screenshots/fixed_error_by_removing_-f.png)
-
----
-
-### 📌 Notes
-All work was performed in an isolated lab using test systems/accounts. Screenshots are evidence of workflow and outcomes.
+Using Python And Scrapy For Recon Screenshots For Script Lab Final Bash Output Fixed Error By Removing -F
