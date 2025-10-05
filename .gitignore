@@ -2,3 +2,11 @@
 *.pcap
 .DS_Store
 Thumbs.db
+
+# housekeeping: helper scripts not meant to be committed
+/consolidate_grc_into_folder.sh
+/fix_and_consolidate.sh
+/move_grc_projects.sh
+/write_mini_readmes.sh
+/add_cloud_grc_projects.sh
+/refresh_cloud_grc.sh
