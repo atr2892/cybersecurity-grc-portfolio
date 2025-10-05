@@ -1,1 +1,0 @@
-# PowerShell: Enumerate domain users.
