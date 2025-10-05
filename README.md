@@ -1,193 +1,96 @@
-Alison T. Richardson-Howard  
-Cybersecurity Specialist | Penetration Tester | Security Automation Engineer
+# 🛡️ Cybersecurity Governance, Risk & Compliance (GRC) Portfolio  
+**by Alison Richardson**
 
-📍 Chicago, IL (Remote-Ready)  
-📧 alisonrichardsonhoward@gmail.com  
-🔗 LinkedIn · 💻 GitHub
+This portfolio highlights my work in cybersecurity through the lens of **governance, risk management, compliance, security controls, vulnerability analysis, and incident documentation**. My background in technical operations and engineering allows me to connect real-world processes with security requirements, policy enforcement, and risk reduction.
 
 ---
 
-## 🎓 Education & Certifications
-**M.S. Cybersecurity & Information Assurance** — Western Governors University (in progress)  
-CompTIA CySA+, ISC² CC, Google Cybersecurity Professional Certificate  
-Currently pursuing: CompTIA PenTest+
+## 🔹 Featured GRC-Focused Projects
+
+### ✅ 1. Splunk Detection & Security Controls
+Use cases focused on:
+- SIEM analysis and monitoring
+- MITRE ATT&CK mapping
+- Alert creation and rule tuning
+- Incident documentation and response planning
+- Alignment with NIST CSF “Detect” functions
+
+**Folder:** `/GRC-Projects/Splunk-Detection-and-Controls`
 
 ---
 
-## 📂 Portfolio Overview
-Hands-on labs in a controlled lab environment. Focus: network capture, web app attacks, social engineering/AitM, Active Directory reconnaissance, and defensive automation (DNS sinkholing, firewall rule automation, malware cleanup). Evidence includes redacted screenshots (unredacted screenshots available upon request for verified, authorized reviewers).
+### ✅ 2. Vulnerability Risk Assessment & Remediation
+Projects that simulate:
+- Vulnerability scanning (Nessus/OpenVAS examples)
+- CVSS scoring and prioritization
+- Remediation planning
+- Reporting for leadership or audit teams
+- Risk tracking and follow-up documentation
+
+**Folder:** `/GRC-Projects/Vulnerability-Risk-Assessment`
 
 ---
 
-## Projects
+### ✅ 3. Incident Response & Runbooks
+Focused on:
+- Response workflows
+- Lateral movement scenarios
+- Cleanup and containment steps
+- Post-incident documentation
+- Role-based escalation
 
-### 🔹 Pentesting Work
-
-#### 🏥 Penetration Testing Engagement Plan Evaluation – Western View Hospital  
-*Type: Engagement Analysis & Strategic Recommendations*
-
-**Tools Used:**  
-Nmap • Burp Suite • Social Engineering Toolkit (SET) • Vulnerability Scanning
-
-**Summary:**  
-Evaluated a penetration testing engagement plan for a healthcare organization, assessing alignment with operational continuity, compliance requirements, and industry best practices.
-
-**Steps Performed:**  
-- Reviewed scope for internal, external, and social engineering tests  
-- Mapped plan elements to HIPAA, NIST SP 800-115, ISO 27001, PCI DSS, and GDPR controls  
-- Evaluated reporting, remediation scoring, and Rules of Engagement for safety and uptime concerns
-
-**Key Takeaway:**  
-Actionable recommendations provided to reduce disruption risk, improve compliance coverage, and clarify reporting for both technical and executive stakeholders. *(Redacted document available; unredacted on request with appropriate approvals.)*
+**Folder:** `/GRC-Projects/Incident-Response-and-Runbooks`
 
 ---
 
-#### 🛰️ 1) Network Traffic Capture & Analysis  
-*Type: Network Forensics Lab*
+### ✅ 4. Policy & Compliance Artifacts
+Demonstrations of:
+- Access control standards
+- Acceptable use policies
+- Vendor or third-party risk frameworks
+- Alignment with ISO 27001 / NIST / PCI
+- Audit readiness documentation
 
-**Tools Used:**  
-tcpdump • Wireshark
-
-**Summary:**  
-Captured and analyzed HTTP, FTP, and ICMP traffic to demonstrate how plaintext credentials and sensitive information can be exposed on insecure protocols.
-
-**Steps Performed:**  
-- Captured packets with `tcpdump` for HTTP (port 80), FTP, and ICMP traffic  
-- Loaded PCAPs into Wireshark for protocol analysis and packet inspection  
-- Located and examined HTTP POST requests to identify plaintext credentials
-
-**Key Takeaway:**  
-Unencrypted protocols leak credentials in transit — enforce TLS and deprecate insecure services to mitigate credential exposure.
+**Folder:** `/GRC-Projects/Policy-and-Compliance-Documents`
 
 ---
 
-#### 🔍 2) Nmap Scripting & Automation  
-*Type: Recon Automation Lab*
+## 🔹 Technical Labs (Supporting Hands-On Work)
 
-**Tools Used:**  
-Bash • Nmap
+These labs reinforce the technical understanding behind controls and risk decisions:
 
-**Summary:**  
-Developed and debugged an Nmap automation script (`NmapAnalysis.sh`) to streamline recon and handle dual-port scanning and user prompts.
+**Folder:** `/Technical-Labs`
 
-**Steps Performed:**  
-- Wrote `NmapAnalysis.sh` with interactive prompts for target and port selection  
-- Resolved a `-F` conflict and other script errors to improve reliability  
-- Added logic to handle targets with multiple open ports and produced consistent output
-
-**Key Takeaway:**  
-Automation speeds reconnaissance while reducing manual errors; robust scripts should handle edge cases and provide clear prompts for repeatable scans.
+Examples include:
+- TryHackMe labs
+- Linux & Windows hardening
+- Wireshark packet analysis
+- Metasploit simulations
+- Network and host recon exercises
 
 ---
 
-#### 🧩 3) Active Directory Enumeration  
-*Type: AD Recon Lab*
+## 🔹 Reporting, Risk & Remediation
 
-**Tools Used:**  
-PowerShell
+Communication and documentation are essential in GRC. These files demonstrate:
+- Executive summaries
+- Risk register examples
+- Remediation plans
+- Stakeholder communication deliverables
 
-**Summary:**  
-Performed Active Directory enumeration to identify domain computers, users, groups, and account details — mapping potential attack surface and privilege relationships.
-
-**Steps Performed:**  
-- Queried domain for computer and server listings  
-- Enumerated user accounts and group memberships using PowerShell  
-- Collected user metadata useful for privilege escalation and lateral-movement analysis
-
-**Key Takeaway:**  
-AD enumeration quickly surfaces visibility into access patterns and high-value targets; inventory and least-privilege controls reduce exposure.
+**Folder:** `/Reporting-and-Remediation`
 
 ---
 
-#### 🛑 4) DNS Blocking Automation  
-*Type: Defensive Automation Lab*
-
-**Tools Used:**  
-Bash
-
-**Summary:**  
-Implemented an automated DNS sinkhole process that retrieves malicious domain feeds and blocks resolution by updating `/etc/hosts`.
-
-**Steps Performed:**  
-- Pulled threat feed of malicious domains programmatically  
-- Updated `/etc/hosts` to redirect/block listed domains  
-- Verified blocked resolution via DNS lookups and resolution checks
-
-**Key Takeaway:**  
-A simple DNS sinkhole provides fast mitigation for known-malicious domains, reducing callbacks and limiting user exposure to phishing/malware C2.
+## 🔹 Skills Demonstrated Across This Portfolio
+- Security Governance & Compliance (NIST, ISO 27001, PCI)
+- Vulnerability Analysis & Risk Prioritization
+- SIEM Monitoring & MITRE ATT&CK Mapping
+- Incident Response Documentation
+- Policy Development & Audit Support
+- Process Controls & Remediation Tracking
+- Cross-Functional Communication
 
 ---
 
-#### 🔥 5) Firewall Rule Automation  
-*Type: Network Hardening Automation*
-
-**Tools Used:**  
-Bash • iptables • cron
-
-**Summary:**  
-Automated ingestion of CIDR threat feeds to add DROP rules to `iptables`, with duplicate removal and scheduled updates.
-
-**Steps Performed:**  
-- Ingested CIDR lists from threat feeds and normalized IP ranges  
-- Programmatically updated `iptables` with DROP rules, ensuring de-duplication  
-- Scheduled regular updates through `cron` to maintain current protections
-
-**Key Takeaway:**  
-Automated firewall updates from trusted threat feeds enable continuous network hardening and reduce manual maintenance overhead.
-
----
-
-#### 🧹 6) Malware Removal Automation  
-*Type: Endpoint Remediation Automation*
-
-**Tools Used:**  
-Bash • threat hash feed • cron
-
-**Summary:**  
-Built an automated cleanup script that matches file names and known-malware hashes to remove binaries and scheduled periodic scans/cleanup.
-
-**Steps Performed:**  
-- Matched local files against a threat-hash feed  
-- Removed files identified as malicious and logged actions  
-- Scheduled cleanup via `cron` to regularly sweep for known threats
-
-**Key Takeaway:**  
-Hash-based removal reduces dwell time for known malware; combine with behavioral detection for broader coverage against unknown threats.
-
----
-
-#### 🛠️ 7) SQL Injection Enumeration (SQLMap)  
-*Type: Web App Vulnerability Lab*
-
-**Tools Used:**  
-SQLMap
-
-**Summary:**  
-Used SQLMap to detect and exploit SQL injection in a vulnerable application, enumerating database, tables, and columns to demonstrate data exposure.
-
-**Steps Performed:**  
-- Ran SQLMap to fingerprint the DBMS and identify injectable parameters  
-- Enumerated available databases, tables, and columns  
-- Extracted example records to demonstrate impact of SQLi vulnerabilities
-
-**Key Takeaway:**  
-SQL injection can yield full database exposure; parameterized queries and input validation are critical defenses.
-
----
-
-#### 🎯 8) Adversary-in-the-Middle (AitM)  
-*Type: Web Proxy / On-Path Attack Lab*
-
-**Tools Used:**  
-Burp Suite • Kali Linux • Windows (victim)
-
-**Summary:**  
-Performed an on-path interception exercise against OWASP Juice Shop (proxying victim traffic) to capture login POSTs and demonstrate credential theft via AitM techniques.
-
-**Steps Performed:**  
-- Configured Burp Suite as an intercepting proxy and adjusted victim browser settings  
-- Intercepted and analyzed HTTP POST requests containing credentials  
-- Documented the workflow and artifacts demonstrating successful interception
-
-**Key Takeaway:**  
-On-path interception combine
+📍 **Actively building work aligned to remote roles in cybersecurity GRC, compliance, risk management, audit support, and security governance.**
