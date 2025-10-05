@@ -1,20 +1,31 @@
-# TITLE
-**One-Line Summary:**  
-SUMMARY
+# DNS Blocking Automation
+
+**One-Line Summary**  
+Automates malicious domain blocking to prevent callbacks and reduce threat exposure.
 
 ---
+
 ## ✅ Objective
-OBJ
+Convert domain IOCs into **resolver-level blocks** (hosts/sinkhole) and verify prevention.
+
 ## ✅ Tools & Methods
-TOOLS
-## ✅ What Was Done
-- STEP1
-- STEP2
+- Bash/Python: `block-DNS.sh`, `AutoDNS.py`
+- Feed ingestion; hosts/sinkhole updates; verification
+
+## ✅ What I Did
+- Pulled domains from feed(s)
+- Updated resolver to **deny resolution**
+- Verified blocks & captured proof
+
 ## ✅ Findings / Risk / Outcome
-OUTCOME
+- Callback attempts **denied** at DNS layer
+- Lowered phishing/C2 exposure
+
 ## ✅ Remediation / Control Value
-CONTROL
-## ✅ Evidence & Files
-- `src/` – scripts/configs
-- `evidence/` – screenshots/outputs
-- `docs/` – notes/write-up
+- Schedule updates; integrate lookups with SIEM alerts
+- Pair with egress filtering for layered control
+
+## 📁 Evidence & Files
+- `src/` — `block-DNS.sh`, `AutoDNS.py`
+- `evidence/` — `block_dns_resolution_based_on_thread_feed_start.png`, `shows_scrit_that_automatically_retrieve_bad_dns_resoltuions.png`, `dns_resource_record_type_results_from_scrapypython_config.png`
+- `docs/` — summary + feed sources

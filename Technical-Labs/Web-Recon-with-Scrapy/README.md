@@ -1,20 +1,31 @@
-# TITLE
-**One-Line Summary:**  
-SUMMARY
+# Web Recon with Python Scrapy
+
+**One-Line Summary**  
+Automates external surface discovery to support threat modeling and asset inventory accuracy.
 
 ---
+
 ## ✅ Objective
-OBJ
+Collect structured data from target web properties to inform scoping and exposure profiles.
+
 ## ✅ Tools & Methods
-TOOLS
-## ✅ What Was Done
-- STEP1
-- STEP2
+- Python Scrapy; selective parsing of endpoints/metadata
+- Exported results for downstream analysis
+
+## ✅ What I Did
+- Gathered endpoints/metadata
+- Organized results for testing
+- Captured run outputs & screenshots
+
 ## ✅ Findings / Risk / Outcome
-OUTCOME
+- Improved visibility of exposed surface
+- Input for risk ranking and scoping
+
 ## ✅ Remediation / Control Value
-CONTROL
-## ✅ Evidence & Files
-- `src/` – scripts/configs
-- `evidence/` – screenshots/outputs
-- `docs/` – notes/write-up
+- Update asset inventory; monitor new exposure over time
+- Feed discoveries into appsec backlog
+
+## 📁 Evidence & Files
+- `src/` — `ScrapyRecon.py`
+- `evidence/` — `using_python_and_scrapy_for_recon_screenshots_for_script_lab.png`
+- `docs/` — usage notes
