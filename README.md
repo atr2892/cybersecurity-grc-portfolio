@@ -94,3 +94,15 @@ Communication and documentation are essential in GRC. These files demonstrate:
 ---
 
 📍 **Actively building work aligned to remote roles in cybersecurity GRC, compliance, risk management, audit support, and security governance.**
+
+##  Technical Labs
+  * Directory Traversal — `Technical-Labs/Directory-Traversal/`
+  * SQLMap Enumeration — `Technical-Labs/SQLMap-Enumeration/`
+  * Wireshark: Sniffing Network Traffic — `Technical-Labs/Wireshark-Sniffing-Network-Traffic/`
+  * Web Recon with Python Scrapy — `Technical-Labs/Web-Recon-with-Scrapy/`
+  * Nmap Recon & Bash Automation — `Technical-Labs/Nmap-Recon/`
+  * Malware Removal Automation — `Technical-Labs/Malware-Removal-Automation/`
+  * Firewall Rule Automation — `Technical-Labs/Firewall-Rule-Automation/`
+  * DNS Blocking Automation — `Technical-Labs/DNS-Blocking-Automation/`
+
+  * Active Directory Enumeration — `Technical-Labs/Active-Directory-Enumeration/`
