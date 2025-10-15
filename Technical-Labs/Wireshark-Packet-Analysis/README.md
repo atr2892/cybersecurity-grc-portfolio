@@ -1,4 +1,4 @@
-# Firewall Rule Automation
+# Wireshark Packet Analysis
 
 ## Overview
 Case study lab demonstrating technical security skills that feed GRC processes.
