@@ -1,4 +1,4 @@
-# Firewall Rule Automation
+# Nmap Recon and Automation
 
 ## Overview
 Case study lab demonstrating technical security skills that feed GRC processes.
