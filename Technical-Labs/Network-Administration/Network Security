@@ -1,0 +1,111 @@
+#### 🌐 Network Security Architecture & Vulnerability Mitigation  
+*Type: Network Security Assessment & Redesign Proposal*
+
+**Technologies / Concepts Referenced:**  
+OSI Model • TCP/IP • VLANs • Firewalls • Zenmap • OpenVAS • HIPAA Compliance
+
+**Summary:**  
+This paper evaluates an outdated and insecure network environment, identifies vulnerabilities, and proposes a merged and modernized network architecture with improved performance, segmentation, and regulatory compliance.
+
+---
+
+### 🧩 Problem Overview
+The organization operates on an outdated, unsecure network lacking proper segmentation, scalability, and protections. Security threats are compounded by aging hardware, poor configuration, and insufficient monitoring.
+
+---
+
+### 🔍 Security Gaps Identified
+Key weaknesses highlighted include:
+- Lack of network segmentation  
+- Vulnerable or outdated workstations and servers  
+- Insufficient access control and policy enforcement  
+- Absence of IDS/IPS monitoring  
+- Non-compliance with HIPAA requirements
+
+This creates risks of lateral movement, data exposure, and regulatory violations.
+
+---
+
+### 🛠 Assessment Tools Mentioned
+The paper references:
+- **Zenmap:** GUI-based network scanning for host visibility and port enumeration  
+- **OpenVAS:** Vulnerability assessment for services, systems, and remediation prioritization  
+
+These tools help identify misconfigurations and exploitable services.
+
+---
+
+### 🔁 Proposed Network Redesign
+A modernized, merged network is proposed to:
+- Reduce attack surface  
+- Improve traffic management  
+- Support monitoring and policy enforcement  
+- Meet compliance standards  
+- Streamline troubleshooting and security oversight
+
+The redesign leverages segmentation, updated devices, and structured addressing.
+
+---
+
+### 📡 OSI & TCP/IP Model Relevance
+The paper reinforces how the OSI and TCP/IP models guide:
+- Traffic flow control  
+- Secure communication between network layers  
+- Hardware/software responsibilities  
+- Protocol-based defense strategies
+
+Understanding these models supports effective architecture planning and mitigation.
+
+---
+
+### ⚙️ Upgraded Hardware & Software Justification
+Recommended upgrades address:
+- Performance bottlenecks  
+- Unsupported legacy systems  
+- Patch coverage and secure defaults  
+- Logging and monitoring enhancements
+
+Modern firewalls, switches, and VLAN-capable devices improve both speed and protection.
+
+---
+
+### 🔐 Secure Network Design Principles
+Applied security concepts include:
+- Defense-in-depth  
+- Least privilege  
+- Network segmentation  
+- Access control policies  
+- Encrypted communications  
+- Auditing and monitoring
+
+These principles align with industry standards and healthcare requirements.
+
+---
+
+### ⚖️ Regulatory Compliance (HIPAA)
+The network proposal ensures compliance by:
+- Protecting PHI through segmentation and encryption  
+- Enforcing role-based access and authentication  
+- Limiting unnecessary data exposure  
+- Establishing audit trails and recovery capabilities
+
+This reduces legal and operational liability for healthcare entities.
+
+---
+
+### 🧭 Threats & Mitigation Strategy
+Common threats addressed:
+- Unauthorized access → Access control lists, VLANs, and authentication  
+- Malware propagation → Segmentation and endpoint hardening  
+- Data interception → Encrypted communication and secure tunneling  
+- Configuration weaknesses → Vulnerability scanning and patch management
+
+---
+
+### ✅ Key Takeaway
+Upgrading and redesigning the network using segmentation, modern devices, and compliance-aligned policies reduces vulnerabilities, improves scalability, and ensures alignment with HIPAA and security best practices.
+
+---
+
+### 📚 References
+(References from the original document can be added here if you want them included.)
