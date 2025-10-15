@@ -1,29 +1,26 @@
-# Directory Traversal Vulnerability Assessment
+# Directory Traversal
 
-**One-Line Summary**  
-Demonstrates unauthorized file access to expose input handling and access control failures.
+## Overview
+Demonstrates exploitation of directory traversal vulnerabilities to access restricted files and validate remediation steps.
 
----
+## Objective
+Identify and test improper input validation in web applications that exposes unauthorized file access.
 
-## ✅ Objective
-Prove path traversal by accessing files outside intended directories (e.g., `/etc/passwd`).
+## Tools & Methods
+- **Tools/Scripts:** Burp Suite, curl
+- **Techniques:** Path traversal payloads ("../" sequences), file inclusion testing
 
-## ✅ Tools & Methods
-- Browser / Burp request manipulation
-- Crafted `../` payloads, captured outputs
+## Approach
+- **Problem:** Web apps with insufficient input sanitization may expose sensitive files.
+- **Action:** Tested traversal payloads against vulnerable endpoints, validated responses, and documented proof.
+- **Result:** Confirmed access to restricted files and recommended input validation and path normalization as remediation.
 
-## ✅ What I Did
-- Built traversal payloads and navigated webroot
-- Accessed sensitive system files and recorded evidence
+## GRC Relevance
+- Maps to **OWASP Top 10 (Security Misconfiguration / Broken Access Controls)**.
+- Provides audit evidence and remediation steps for secure coding and access controls.
 
-## ✅ Findings / Risk / Outcome
-- Confirmed insufficient path normalization/authorization
-- Validated **sensitive data exposure** via traversal
+## Artifacts
+- 📁 **src/** — payload examples and test scripts
+- 📁 **evidence/** — screenshots of exploited endpoints and blocked fixes
+- 📁 **docs/** — remediation guidance
 
-## ✅ Remediation / Control Value
-- Normalize/validate paths server-side
-- Restrict filesystem reads; add WAF patterns & auth checks
-
-## 📁 Evidence & Files
-- `evidence/` — `directory_traveral_navigation_to_the_website_highlighted.png`, `directory_traveral_shows_traversal_to_customer_information_via_the_webroot.png`, `directory_traveral_shows_webroot_directory_represented.png`, `directory_traveral_using_etcpasswd_to_get_admin_id.png`, `directory_traveral_vulnerability_in_url_proven.png`
-- `docs/` — short report for defect ticket

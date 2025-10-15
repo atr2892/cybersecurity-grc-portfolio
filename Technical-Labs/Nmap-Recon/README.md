@@ -1,31 +1,20 @@
-# Nmap Recon & Bash Automation
+# Nmap Recon (legacy / quick notes)
 
-**One-Line Summary**  
-Performs automated asset and service discovery to surface unmanaged risk and misconfigurations.
+## Overview
+Legacy/compact notes for Nmap usage and quick recon checks.
 
----
+## Objective
+Provide quick reference commands and examples for ad-hoc recon tasks.
 
-## ✅ Objective
-Automate recon to produce consistent baselines and detect unexpected exposures.
+## Tools & Methods
+- **Tools:** nmap
+- **Techniques:** SYN scans, version detection
 
-## ✅ Tools & Methods
-- Bash + Nmap (`NmapAnalysis.sh`)
-- Prompted inputs; error handling; dual-port logic
+## Approach
+- **Problem:** Quick checks needed for reconnaissance.
+- **Action:** Example commands and short notes.
+- **Result:** Handy reference that complements the automated Nmap Recon & Automation workflow.
 
-## ✅ What I Did
-- Scanned targets (fast/full); normalized outputs
-- Fixed `-F` conflict; added prompts & logic
-- Captured outputs and error/fix evidence
+## Artifacts
+- 📁 **docs/** — quick command cheat-sheet
 
-## ✅ Findings / Risk / Outcome
-- Identified exposed services/anomalies
-- Improved repeatability for assessments
-
-## ✅ Remediation / Control Value
-- Feed exposures to vuln management
-- Track service changes over time
-
-## 📁 Evidence & Files
-- `src/` — `NmapAnalysis.sh`
-- `evidence/` — `scripting_automation_-_nmapanalysis_output.png`, `bash_script_show_target_that_has_both_open_ports.png`, `change_script_to_receive_prompt_to_specify_port_scan.png`, `final_bash_output.png`, `script_change_output.png`, `error_output.png`, `fixed_error_by_removing_-f.png`, `scipting_automation_lab_screenshots.png`
-- `docs/` — SOP/notes

@@ -1,15 +1,26 @@
 # Firewall Rule Automation
 
 ## Overview
-Case study lab demonstrating technical security skills that feed GRC processes.
+Automated firewall rule creation and updates with logging and rollback support to maintain network filtering controls and provide audit evidence.
 
-## Tools
-List tools used.
+## Objective
+Implement scripted firewall automation to enforce block/allow rules consistently and produce change logs for auditors.
+
+## Tools & Methods
+- **Tools/Scripts:** iptables, Bash scripting
+- **Techniques:** Idempotent rule application, logging, rollback testing
 
 ## Approach
-- Problem: what issue the lab addresses
-- Action: what steps/tools were used
-- Result: deliverables produced
+- **Problem:** Manual firewall management leads to configuration drift and audit headaches.
+- **Action:** Developed scripts to apply, log, and rollback firewall rules; tested changes and recorded evidence.
+- **Result:** Automated blocklist management with audit logs and reduced manual error.
 
 ## GRC Relevance
-How findings map to frameworks (NIST, ISO, SOC2, PCI) and support audit evidence.
+- Demonstrates control over network filtering (NIST SC-7 / ISO A.13) and provides auditable change records for compliance.
+- Useful evidence for network security and access-control assessments.
+
+## Artifacts
+- 📁 **src/** — automation scripts
+- 📁 **evidence/** — sample logs and change history
+- 📁 **docs/** — usage and rollback instructions
+

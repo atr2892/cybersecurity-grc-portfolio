@@ -1,31 +1,25 @@
 # Web Recon with Python Scrapy
 
-**One-Line Summary**  
-Automates external surface discovery to support threat modeling and asset inventory accuracy.
+## Overview
+Structured web reconnaissance using Scrapy to collect URLs, forms, and metadata to support threat modeling and application security testing.
 
----
+## Objective
+Generate a site map and enumerated surface of potential attack vectors for prioritizing testing.
 
-## ✅ Objective
-Collect structured data from target web properties to inform scoping and exposure profiles.
+## Tools & Methods
+- **Tools/Scripts:** Python, Scrapy
+- **Techniques:** Targeted crawling and structured output to JSON/CSV
 
-## ✅ Tools & Methods
-- Python Scrapy; selective parsing of endpoints/metadata
-- Exported results for downstream analysis
+## Approach
+- **Problem:** Incomplete discovery leads to missed test cases.
+- **Action:** Built spiders to harvest URLs and parameters; stored structured results for review.
+- **Result:** Site map and candidate entry points for further testing.
 
-## ✅ What I Did
-- Gathered endpoints/metadata
-- Organized results for testing
-- Captured run outputs & screenshots
+## GRC Relevance
+- Supports application risk assessments and secure development lifecycle evidence.
 
-## ✅ Findings / Risk / Outcome
-- Improved visibility of exposed surface
-- Input for risk ranking and scoping
+## Artifacts
+- 📁 **src/** — spiders
+- 📁 **evidence/** — sample crawl outputs
+- 📁 **docs/** — scope and run instructions
 
-## ✅ Remediation / Control Value
-- Update asset inventory; monitor new exposure over time
-- Feed discoveries into appsec backlog
-
-## 📁 Evidence & Files
-- `src/` — `ScrapyRecon.py`
-- `evidence/` — `using_python_and_scrapy_for_recon_screenshots_for_script_lab.png`
-- `docs/` — usage notes

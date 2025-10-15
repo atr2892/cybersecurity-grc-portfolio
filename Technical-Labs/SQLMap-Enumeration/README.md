@@ -1,30 +1,26 @@
-# SQLMap Enumeration & Database Exposure Assessment
+# SQLMap Enumeration
 
-**One-Line Summary**  
-Assesses database exposure through SQLi to validate application security gaps and remediation needs.
+## Overview
+Automated SQL injection discovery and controlled exploitation in a test environment to validate application-level controls and produce remediation guidance.
 
----
+## Objective
+Validate web app input validation and demonstrate impact of SQL injection for remediation prioritization.
 
-## ✅ Objective
-Demonstrate SQL injection impact by discovering DBMS, listing tables/columns, and confirming accessible data.
+## Tools & Methods
+- **Tools/Scripts:** SQLMap, Burp Suite
+- **Techniques:** Parameter fuzzing, controlled data extraction
 
-## ✅ Tools & Methods
-- SQLMap with safe switches (lab context)
-- Targeted enumeration for proof-of-impact
+## Approach
+- **Problem:** Unvalidated input can permit SQL injection leading to data exposure.
+- **Action:** Identified parameters and ran SQLMap in safe, controlled mode to enumerate schema and sample rows.
+- **Result:** Evidence of SQLi and remediation checklist for developers.
 
-## ✅ What I Did
-- Detected DBMS; enumerated schema
-- Captured tables/columns evidence
-- Mapped results to affected data types
+## GRC Relevance
+- Maps to **PCI DSS** and **OWASP** remediation expectations.
+- Supplies evidence for application security testing and risk registers.
 
-## ✅ Findings / Risk / Outcome
-- Verified depth of data exposure
-- Prioritized fixes for vulnerable endpoints
+## Artifacts
+- 📁 **src/** — command examples
+- 📁 **evidence/** — sanitized output logs
+- 📁 **docs/** — remediation checklist
 
-## ✅ Remediation / Control Value
-- Parameterized queries; least-priv DB accounts
-- SDLC gates (code review, SAST/DAST)
-
-## 📁 Evidence & Files
-- `evidence/` — `enumeration_using_sqlmap.png`, `enumeration_using_sqlmap_name_of_database_discovered_on_targeted_dbms.png`, `sqlmap,_tables_for_the_public_database.png`, `sqlmap_enumeration,_enumeration_of_columns_from_teh_users_table.png`, `enumerate_sqlmap,_enumeration_of_the_tables_within_the_database.png`
-- `docs/` — short write-up
